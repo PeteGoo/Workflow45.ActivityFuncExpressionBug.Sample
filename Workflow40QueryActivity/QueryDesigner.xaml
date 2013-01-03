@@ -23,7 +23,7 @@
                                 ToolTip="Use the 'item' property to define your where clause. e.g. item.FirstName=&quot;John&quot;"
                                 Expression="{Binding Path=ModelItem.Filter.Handler, Mode=TwoWay}"
                                 ExpressionType="{x:Type System:Boolean}"
-                                OwnerActivity="{Binding Path=ModelItem, Mode=OneWay}" />
+                                OwnerActivity="{Binding Path=ModelItem.Filter.Handler, Mode=OneWay}" />
 
 
     </Grid>

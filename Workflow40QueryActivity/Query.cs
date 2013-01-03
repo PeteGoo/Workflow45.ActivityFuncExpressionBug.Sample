@@ -87,7 +87,8 @@ namespace Workflow40QueryActivity {
             return new Query<T> {
                 DisplayName = "Query Something",
                 Filter = new ActivityFunc<T, bool> {
-                    Argument = new DelegateInArgument<T>("item")
+                    Argument = new DelegateInArgument<T>("item"),
+                    Handler = new VisualBasicValue<bool>()
                 }
             };
         }
